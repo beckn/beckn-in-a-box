@@ -25,5 +25,5 @@ Contains the Magento extension that can be used to beckn enable a Magento store.
 ## Work queue
 |Release|Start Date|End Date|Status|Delay in Days|REQ|Documentation|Code|Logs
 |-------|----------|--------|------|-------------|---|-------------|----|----
-|0.1.0|15 Jan 2022|15 March 2022|In Progress|10|[Text](https://github.com/beckn/beckn-in-a-box)|[Text](https://github.com/beckn/beckn-in-a-box/wiki)|[Text]()|[Text](link)
+|0.1.0|15 Jan 2022|15 March 2022|In Progress|10|[REQ](https://github.com/beckn/beckn-in-a-box)|[Documentation](https://github.com/beckn/beckn-in-a-box/wiki)|[Code](https://github.com/beckn/beckn-in-a-box)|
 
