@@ -15,7 +15,7 @@ Contains the Magento extension that can be used to beckn enable a Magento store.
 
 |Projects/Products|Version|Versioning Scheme|Manager|Responsible|Accountable|Consulted|Informed|Last update|Last updated date|Next upcoming release date|
 |-----------------|-------|-----------------|-------|-----------|-----------|---------|--------|-----------|-----------------|--------------------------
-|Beckn-In-A-Box|0.1.0|[version Managment](https://docs.google.com/document/d/1HjXV4W2STirMUa2_L8bGWB0ORn9SeYRvJSyUPbntbXY/edit#heading=h.b06d3jp4draa)|Vrushali|Vrushali|Vrushali|Enterprise Minds, Indglobal|General Public|BIAB retail BAP testing is in progress|20 Jan 2022|15/03/2022
+|Beckn-In-A-Box|0.1.0|[version Managment](https://docs.google.com/document/d/1HjXV4W2STirMUa2_L8bGWB0ORn9SeYRvJSyUPbntbXY/edit#heading=h.b06d3jp4draa)|Vrushali|Vrushali|Vrushali|Enterprise Minds, Indglobal|General Public|BIAB retail BAP functionality testing done. Bug fixing is in progress|20 Jan 2022|15/03/2022
 
 ### Comments:
 
