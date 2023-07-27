@@ -2,7 +2,7 @@
 > **Disclaimer:** This project is still in beta phase. Ustable for Production Use
 
 ## Contents
-
+The Beckn In a Box (BIAB) project is designed to provide an alternate path to developing and deploying a beckn-enabled applications with minimal engineering overhead. It is a modular integration framework that allows network participants to become beckn enabled by building or subscribing to pre-built modules/microservices. BIAB can also be used to configure and launch beckn-enabled networks in a single click
 ### bap
 Contains the client layer, protocol layer and UI layer for the BAP reference implementation.
 
