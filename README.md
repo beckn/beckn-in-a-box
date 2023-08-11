@@ -2,7 +2,7 @@
 > **Disclaimer:** This project is still in beta phase. Ustable for Production Use
 
 ## Contents
-
+The Beckn In a Box (BIAB) project is designed to provide an alternate path to developing and deploying a beckn-enabled applications with minimal engineering overhead. It is a modular integration framework that allows network participants to become beckn enabled by building or subscribing to pre-built modules/microservices. BIAB can also be used to configure and launch beckn-enabled networks in a single click
 ### bap
 Contains the client layer, protocol layer and UI layer for the BAP reference implementation.
 
@@ -22,6 +22,9 @@ Contains the Magento extension that can be used to beckn enable a Magento store.
 1. Define the draft product concept note 
 
 2. Approval of the product concept note
+
+### Frontend Product Design
+1. [View Design](https://app.uizard.io/p/5d29aa0b)
 
 ## Work queue
 |Release|Start Date|End Date|Status|Delay in Days|REQ|Documentation|Code|Logs
