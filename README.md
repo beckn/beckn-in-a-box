@@ -23,6 +23,9 @@ Contains the Magento extension that can be used to beckn enable a Magento store.
 
 2. Approval of the product concept note
 
+### Frontend Product Design
+1. [View Design](https://app.uizard.io/p/5d29aa0b)
+
 ## Work queue
 |Release|Start Date|End Date|Status|Delay in Days|REQ|Documentation|Code|Logs
 |-------|----------|--------|------|-------------|---|-------------|----|----
