@@ -26,6 +26,9 @@ Contains the Magento extension that can be used to beckn enable a Magento store.
 ### Frontend Product Design
 1. [View Design](https://app.uizard.io/p/5d29aa0b)
 
+### Backend Architecture Design
+1. [View Design](https://github.com/premsaivarmachekuri/beckn-in-a-box/assets/110842297/7daba497-87bf-41b7-8130-6440051cab9e)
+
 ## Work queue
 |Release|Start Date|End Date|Status|Delay in Days|REQ|Documentation|Code|Logs
 |-------|----------|--------|------|-------------|---|-------------|----|----
