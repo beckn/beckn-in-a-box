@@ -1,0 +1,24 @@
+/* *{
+  border: 1px solid red;
+} */
+.App {
+  text-align: center;
+}
+
+
+.third{
+  display: flex;
+  flex-direction: column;
+  background-color: #222;
+  color: white;
+  width: 20%;
+  min-width: 200px;
+  height: 100vh;
+  position: sticky;
+  top: 0;
+}
+.box-container{
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+}
