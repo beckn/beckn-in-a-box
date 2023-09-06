@@ -1,0 +1,29 @@
+/* sdk.css */
+* {
+    box-sizing: border-box;
+}
+
+.sdk-heading {
+    color: darkblue;
+    font-size: 2.5rem;
+}
+
+.plus-icon {
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+.sdk-container {
+    width: 100%;
+    height: 100%;
+    text-align: left;
+}
+
+.sdk-projects {
+    width: 100%;
+    background-color: #f2f2f2;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 250px;
+}
