@@ -1,0 +1,29 @@
+.subcomponent-box {
+    width: 100%;
+    min-width: 250px;
+    max-width: 300px;
+    height: 100%;
+    min-height: 150px;
+    max-height: 200px;
+    padding: 0.5rem 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: left;
+    background-color: lightblue;
+    border-radius: 1rem;
+    margin: 1rem;
+}
+
+.project-name {
+    font-size: 1rem;
+}
+.project-edit{
+    color:darkblue;
+    align-self: center;
+}
+.project-domain {
+    font-size: 0.8rem;
+    color:blueviolet;
+}
+

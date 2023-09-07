@@ -1,0 +1,99 @@
+/* Navbar container */
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    justify-content: space-between;
+    background-color: #333;
+    color: white;
+}
+
+/* Heading */
+.navbar-heading {
+    font-size: 1.5rem;
+    padding-left: 2rem;
+}
+
+/* Search input */
+.navbar-search {
+    padding: 10px;
+    width: 70%;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    border: none;
+    border-radius: 20px;
+    background-color: #f1f1f1;
+    padding: 1rem;
+    outline: 0;
+}
+
+/* Profile section */
+.navbar-profile {
+    display: flex;
+    align-items: center;
+}
+
+/* Profile photo */
+.profile-photo {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #ccc;
+    margin-right: 10px;
+}
+
+/* Profile dropdown */
+.profile-dropdown {
+    position: relative;
+}
+
+.dropdown-icon {
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #f9f9f9;
+    color: #333;
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 1;
+}
+
+/* Show the dropdown when the icon is clicked */
+.profile-dropdown.active .dropdown-content {
+    display: block;
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+
+    .navbar-search {
+        margin-top: 10px;
+        width:50%;
+    }
+}
+.letter {
+    font-size: 2.2rem; /* Set an appropriate font size */
+    margin: 0; /* Remove any default margin */
+  }
+
+.logout-btn{
+    background-color: lightcoral;
+    padding: 1rem 2rem;
+    border: 0;
+    border-radius: 15px;
+    color:#fff;
+    margin-right: 1rem;
+    cursor: pointer;
+}
+.logout-btn:active{
+    transform: scale(0.8);
+}
