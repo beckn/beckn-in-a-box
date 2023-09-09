@@ -1,0 +1,13 @@
+
+POST http://localhost:3000/users
+
+Content-Type: application/json
+
+{
+    "project": "Retail",
+    "project_type": "User Application",
+    "project_role": "BPP",
+    "organization_name": "ONDC",
+    "manage": 0,
+    "id": 6
+}
