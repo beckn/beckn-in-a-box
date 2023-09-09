@@ -81,6 +81,7 @@ const Component1 = ({ onSubmit, org }) => {
     setImageToShow(imageUrl);
     setModalShow(true);
   };
+  
 
   // Function to close the modal
   const closeModal = () => {
@@ -137,16 +138,11 @@ const Component1 = ({ onSubmit, org }) => {
       </select>
 
       {/* Button to open the modal */}
-      <Button variant="primary" onClick={openModal}>
-        View Type Image
-      </Button>
+      <Button variant="primary" onClick={() => openModal('project_type')}>
+  View Type Image
+</Button>
 
-      {/* Modal for the Type */}
-      <ModalComponent
-        imageUrl="/home/prem/beckn-in-a-box/biab/frontend/src/components/ModalComponent/project_type.png" // Replace with the actual image URL for the "Type"
-        show={modalShow}
-        onHide={closeModal}
-      />
+
     </div>
         {/* <div className="w-6/12">
           <h3 className="my-3 text-xl inline-block text-blue-600/100">Type</h3>
@@ -182,7 +178,7 @@ const Component1 = ({ onSubmit, org }) => {
             <option value="" disabled hidden>
               Select your role
             </option>
-            <option value="BAP">BAP</option>
+            setModalShow  <option value="BAP">BAP</option>
             <option value="BPP">BPP</option>
             <option value="Beckn Gateway">Beckn Gateway</option>
             <option value="Beckn Registry">Beckn Registry</option>
@@ -221,6 +217,13 @@ const Component1 = ({ onSubmit, org }) => {
             <option value="Healthcare">Healthcare</option>
             <option value="Mobility">Mobility</option>
           </select>
+
+           {/* Button to open the modal */}
+           <Button variant="primary" onClick={() => openModal('project_domain')}>
+  View Domain Image
+</Button>
+
+
         </div>
 
         <div className="w-6/12">
@@ -241,6 +244,12 @@ const Component1 = ({ onSubmit, org }) => {
             <option value="Package 3">Package 3</option>
             <option value="Package 4">Package 4</option>
           </select>
+           {/* Button to open the modal */}
+           <Button variant="primary" onClick={() => openModal('select_funnel')}>
+           View Packages Image
+            </Button>
+
+
         </div>
       </div>
 
@@ -273,7 +282,14 @@ const Component1 = ({ onSubmit, org }) => {
       )}
       {!isFormValid && <p>Fill in the details</p>}
       <p>{isProjectRegistered}</p>
+            {/* Modal for the Type */}
+            <ModalComponent
+        imageUrl={imageToShow} // Replace with the actual image URL for the "Type"
+        show={modalShow}
+        onHide={closeModal}
+      />
     </form>
+    
   );
 };
 
