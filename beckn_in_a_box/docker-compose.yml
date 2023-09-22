@@ -1,50 +1,38 @@
-version: '3.8'
-
+version: "3.8"
 services:
-  biab-frontend:
-    image: frontend
+  frontend:
+    image: biab-frontend
     ports:
       - "3002:3002"
-    restart: unless-stopped
+    volumes:
+      - ./frontend:/app
+    stdin_open: true
+    tty: true
     networks:
-      - biab-network
-    depends_on:
-      - biab-backend
-
-  biab-backend:
-    image: backend
+      - mern-network  # Define the network for the frontend service
+  backend:
+    image: biab-backend
     ports:
       - "3001:3001"
-    restart: unless-stopped
-    networks:
-      - biab-network
-    depends_on:
-      - biab-mongodb
-      - biab-mysql
-
-  biab-mongodb:  # Add a MongoDB service
-    image: mongo
-    restart: unless-stopped
-    ports:
-      - "27018:27018"
-    environment:
-      - MONGO_INITDB_ROOT_USERNAME=tvast
-      - MONGO_INITDB_ROOT_PASSWORD=password
-      - MONGO_INITDB_DATABASE=ps
     volumes:
-     - "/var/lib/mongodb-back:/data/db"
+      - ./backend:/app
+    depends_on:
+      - mysql  # This makes biab-backend dependent on the MySQL service
     networks:
-      - biab-network
-    
-  biab-mysql:  # MySQL service
-    image: biab_users
-    restart: unless-stopped
+      - mern-network  # Define the network for the backend service
+  mysql:
+    image: biab-mysql  # Change this line to use the "biab-mysql" image
     environment:
-      - MYSQL_PASSWORD=Sairam@123
-      - MYSQL_DATABASE=users
+      MYSQL_ROOT_PASSWORD: Sairam@123
+      MYSQL_DATABASE: biab
+      MYSQL_USER: root
+      MYSQL_PASSWORD: Sairam@123
+    ports:
+      - "3004:3004"  # Map the MySQL port to the host if needed
     networks:
-      - biab-network
-
+      - mern-network  # Define the network for the MySQL service
+volumes:
+  mysql-data:  # Define a volume for MySQL data persistence
 networks:
-  biab-network:
+  mern-network:
     driver: bridge

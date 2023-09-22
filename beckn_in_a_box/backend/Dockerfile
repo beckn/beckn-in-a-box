@@ -1,20 +1,17 @@
-# Use the official Node.js image as base
-FROM node:14
+FROM node:17-alpine
 
-# Set the working directory inside the container
+# We use nodemon to restart the server every time there's a change
+RUN npm install -g nodemon
+
 WORKDIR /app
 
-# Copy package.json and package-lock.json to the container
-COPY package*.json ./
+COPY package.json .
 
-# Install dependencies
 RUN npm install
 
-# Copy the rest of the application code
 COPY . .
 
-# Expose the port that the app will listen on
 EXPOSE 3001
 
-# Command to run the app in development mode
-CMD [ "npm", "run", "dev" ]
+# Use script specified in package,json
+CMD ["npm", "run", "dev"]

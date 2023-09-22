@@ -4,10 +4,10 @@ import dotenv from 'dotenv';
 dotenv.config();
 
 const pool = mysql.createPool({
-    host: process.env.MYSQL_HOST,
-    user: process.env.MYSQL_USER,
-    password: process.env.MYSQL_PASSWORD,
-    database: process.env.MYSQL_DATABASE
+  host: process.env.MYSQL_HOST,
+  user: process.env.MYSQL_USER,
+  password: process.env.MYSQL_PASSWORD,
+  database: process.env.MYSQL_DATABASE
 }).promise();
 
 
@@ -87,8 +87,7 @@ export const getDetails = async(email, project_type) => {
 
 
 
-const mongoDBURI = "mongodb://localhost:27017/ps"; 
-
+const mongoDBURI = "mongodb://localhost:27017/ps";
 const userSchema = new mongoose.Schema({
     email: {
         type: String,
@@ -111,13 +110,14 @@ const userSchema = new mongoose.Schema({
 }, {timestamps: true});
 
 // Connection 
-mongoose
-    .connect(mongoDBURI, {
-        useNewUrlParser: true,
-        useUnifiedTopology: true
-    })
-    .then(() => console.log("MongoDB Connected"))
-    .catch((err) => console.log("Mongo Error", err));
+// mongoose
+//     .connect(mongoDBURI, {
+//         useNewUrlParser: true,
+//         useUnifiedTopology: true
+//     })
+//     .then(() => console.log("MongoDB Connected"))
+//     .catch((err) => console.log("Mongo Error", err));
+
 
 export const User = mongoose.model('authUser', userSchema);
 
