@@ -1,21 +1,79 @@
 # Beckn in a box
 
-## Introduction
+## What is BeckN in a box?
 
-### Overview
 Beckn-In-a-Box (BIAB) is a modular integration framework that allows any network participant to become beckn-enabled quickly by building simple plug and play modules.
 
 A traditional approach to developing beckn-enabled applications involves the participant to study and understand the specifications, define the scope and use cases based on business workflows, implement the protocol APIs and client APIs, and then register on a network. However, this is a process that is time and effort-intensive.
 
 To ease the process of developing beckn-enabled applications, Beckn-in-a-box provides a set of modules which can be easily integrated with the participant's applications. The participants will be able to configure the modules they require based on network role, domain, use cases, etc. and receive an output in the form of open-source code, SDKs or a complete deployable application.
 
-## Installation Guide
 
-### Step 1: Installation of Beckn Sandbox
+## Table of content:
 
-Please follow the [README.md](https://github.com/beckn/beckn-sandbox/blob/main/README.md) to configure and install the Sandbox code.
+- [BeckN iin a box](#beckn-bpp-boilerplate-ui--backend-sdk)
+  - [What is BeckN in a box?](#what-is-beckn-bpp-boilerplate-ui--beckend-sdk)
+  - [Table of content:](#table-of-content)
+    - [Demo](#demo)
+    - [Pre-requisites](#pre-requisites)
+    - [Project Setup](#project-setup)
+      - [Using Docker](#using-docker)
+      - [Local Setup](#local-setup)
+    - [Folder Structure](#folder-structure)
+    - [Project Architecture](#project-architecture)
+      - [Tech Stack](#tech-stack)
 
-### Step 2: Installation of Beckn-in-box
+### Demo
+
+[Video Link](https://drive.google.com/drive/folders/1pjkO8VNlOzch8bzNbIiLzZ28a1ovkPuC?usp=sharing)
+
+<a id="pre-requisites"></a>
+
+### Pre-requisites
+
+<table>
+  <tr>
+    <td>NodeJS</td>
+    <td>>=16</td>
+  </tr>
+  <tr>
+    <td>MySQL</td>
+    <td> <span/> </td> 
+  </tr>
+</table>
+
+<a id="project-setup"></a>
+
+### Project Setup
+
+- Clone the repository by.
+  ```bash
+  git clone <repo-link>
+  git checkout -b dev
+  git pull origin dev
+  ```
+
+#### Using Docker
+
+**STEP 1: Run your docker containers**
+
+- Simply run docker compose by running `docker-compose up`.
+
+
+**STEP 2: Accessing the ports**
+
+- For the **Beckn in a box Frontend**
+
+```bash
+http://localhost:3002/
+```
+- For the **Beckn in a box Backend**
+
+```bash
+http://localhost:3001/
+```
+
+#### Local Setup
 
 1. **Clone the repo**
 
@@ -75,6 +133,34 @@ Now you have successfully set up the backend. To set up the frontend, follow the
     npm start
     ```
 
+#### Accessing the ports
+
+- Then connect to the beakn in a box by visiting `http://localhost:3002`.
+- BIAB server is running at `http://localhost:3001`.
+
+<a id="folder-structure"></a>
+
+### Folder Structure
+
+```bash
+├── backend/
+│   ├── authorization/ # Level 1 integration
+│   ├── app/ # express API's
+│   └── database/
+    └── Dockerfile/ # dockerfilee
+├── frontend/
+│   ├── App/ #frontend app
+│   └── Dockerfile/ # dockerfile
+└── package.json
+```
+
+<a id="project-architecture"></a>
+
+### Project Architecture
+
+The workflow of the project goes as
+![image](https://user-images.githubusercontent.com/110842297/262409623-fec609cc-5c7b-4aab-b360-84c8a95797ed.png)
+
 ## Tech Stack
 
 ![Markdown](https://img.shields.io/badge/Markdown-000000?style=for-the-badge&logo=markdown&logoColor=white)
@@ -86,7 +172,6 @@ Now you have successfully set up the backend. To set up the frontend, follow the
 ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
 ![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white)
 ![SQLite](https://img.shields.io/badge/sqlite-%2307405e.svg?style=for-the-badge&logo=sqlite&logoColor=white)
-
 
  <h1 align="center"> 📌 Contributing Guidelines </h1>
 
