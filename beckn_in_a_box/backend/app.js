@@ -10,8 +10,8 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
-app.listen(process.env.BACKEND_PORT, () => {
-  console.log(`Server is running on http://localhost:${process.env.BACKEND_PORT}`);
+app.listen(process.env.BACKEND_DEVELOPMENT_URL, () => {
+  console.log(`Server is running on http://localhost:${process.env.BACKEND_DEVELOPMENT_URL}`);
 });
 
 // API: User Signup
