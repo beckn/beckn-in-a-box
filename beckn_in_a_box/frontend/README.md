@@ -11,8 +11,8 @@ To ease the process of developing beckn-enabled applications, Beckn-in-a-box pro
 
 ## Table of content:
 
-- [BeckN BPP Boilerplate UI + Backend SDK](#beckn-bpp-boilerplate-ui--backend-sdk)
-  - [What is BeckN BPP Boilerplate UI + Beckend SDK?](#what-is-beckn-bpp-boilerplate-ui--beckend-sdk)
+- [BeckN in a box](#beckn-bpp-boilerplate-ui--backend-sdk)
+  - [What is BeckN in a box?](#what-is-beckn-bpp-boilerplate-ui--beckend-sdk)
   - [Table of content:](#table-of-content)
     - [Demo](#demo)
     - [Pre-requisites](#pre-requisites)
