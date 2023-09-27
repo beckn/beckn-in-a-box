@@ -33,7 +33,7 @@ services:
       - MYSQL_DATABASE=biab
 
   mysql:
-    image: premsaivarma/beckn-in-a-box:mysql-tag
+    image: mysql
     environment:
       MYSQL_ROOT_PASSWORD: Sairam@123
       MYSQL_DATABASE: biab
