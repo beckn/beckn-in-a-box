@@ -1,7 +1,7 @@
 version: "3.8"
 services:
   frontend:
-    image: premsaivarma/beckn-in-a-box:frontend-tag
+    image: premsaivarma/beckn-in-a-box:client-tag
     ports:
       - "4000:3002"
     volumes:
@@ -17,7 +17,7 @@ services:
       - MYSQL_DATABASE=biab
 
   backend:
-    image: premsaivarma/beckn-in-a-box:backend-tag
+    image: premsaivarma/beckn-in-a-box:server-tag
     ports:
       - "4001:3001"
     volumes:
@@ -38,7 +38,7 @@ services:
       MYSQL_ROOT_PASSWORD: Sairam@123
       MYSQL_DATABASE: biab
     ports:
-      - "3306:3306"
+      - "4002:3306"
     networks:
       - mern-network
 
