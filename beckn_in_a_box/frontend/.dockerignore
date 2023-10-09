@@ -1,0 +1,11 @@
+# Ignore Docker Compose configuration
+docker-compose.yml
+
+# Ignore Docker build context exclusion file
+.dockerignore
+
+# Ignore Node.js modules
+node_modules/
+
+# Ignore environment variable files
+.env

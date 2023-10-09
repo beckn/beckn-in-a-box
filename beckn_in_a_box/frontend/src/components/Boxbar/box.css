@@ -1,0 +1,12 @@
+.box {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #333;
+    background-color: #fff;
+    margin: 5px;
+  }
+  
+  .filled {
+    background-color: green;
+  }
+  

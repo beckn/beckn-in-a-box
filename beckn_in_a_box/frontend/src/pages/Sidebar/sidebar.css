@@ -1,0 +1,40 @@
+/* Sidebar container */
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    background-color: #222;
+    color: white;
+    width: 20%;
+    min-width: 200px;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+  }
+  
+  /* Sidebar items */
+  .sidebar-item {
+    padding: 15px;
+    cursor: pointer;
+    border-bottom: 1px solid #444;
+    font-size: 16px;
+    text-align: left; /* Add margin top and bottom for spacing */
+  }
+  a {
+    text-decoration: none;
+    color: white; /* Set the desired text color */
+  }
+  /* Media queries for responsiveness */
+  @media screen and (max-width: 768px) {
+    .sidebar {
+      width: 100%;
+      min-width: 0;
+      height: auto;
+      position: relative;
+    }
+  
+    .sidebar-item {
+      padding: 15px 20px;
+      font-size: 14px;
+    }
+  }
+  

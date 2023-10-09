@@ -1,0 +1,49 @@
+version: "3.8"
+services:
+  frontend:
+    image: premsaivarma/beckn-in-a-box:client-tag
+    ports:
+      - "4000:3002"
+    volumes:
+      - ./frontend:/app
+    stdin_open: true
+    tty: true
+    networks:
+      - mern-network
+    environment:
+      - MYSQL_HOST=mysql
+      - MYSQL_USER=root
+      - MYSQL_PASSWORD=Sairam@123
+      - MYSQL_DATABASE=biab
+
+  backend:
+    image: premsaivarma/beckn-in-a-box:server-tag
+    ports:
+      - "4001:3001"
+    volumes:
+      - ./backend:/app
+    depends_on:
+      - mysql
+    networks:
+      - mern-network
+    environment:
+      - MYSQL_HOST=mysql
+      - MYSQL_USER=root
+      - MYSQL_PASSWORD=Sairam@123
+      - MYSQL_DATABASE=biab
+
+  mysql:
+    image: mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: Sairam@123
+      MYSQL_DATABASE: biab
+    ports:
+      - "4002:3306"
+    networks:
+      - mern-network
+
+volumes:
+  mysql-data:
+networks:
+  mern-network:
+    driver: bridge

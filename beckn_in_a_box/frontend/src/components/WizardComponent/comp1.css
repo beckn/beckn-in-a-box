@@ -1,0 +1,98 @@
+/* *{
+  border: 1px solid red;
+} */
+.component1 {
+    text-align: left;
+    max-width: 100%;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  .input-box {
+    border-radius: 5px;
+    padding: 0.5rem;
+    min-width: 200px;
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 1rem;
+    border: #333 1px solid;
+  }
+  
+  .select-box {
+    border-radius: 5px;
+    padding: 0.5rem;
+    min-width: 200px;
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 1rem;
+    outline: 0;
+  }
+  
+  .save-button {
+    background-color: red;
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    outline: 0;
+  }
+  .save-button:active {
+    transform: scale(0.8);
+  }
+.label{
+  display: flex;
+  flex-direction: column;
+}
+
+.label-container{
+  display: flex;
+}
+h3{
+  display: inline-block;
+}
+label{
+  width: 50%;
+}
+
+
+.button-group {
+  width: 25%;
+}
+.button-group button{
+  display: inline-block;
+  padding: 0.7rem;
+  font-size: 1rem;
+  margin: 0.5rem;
+}
+.option-button {
+  padding: 0.5rem 1rem;
+  border: 0;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 5px;
+  width: 200px;
+  margin: 4px;
+  background-color: transparent;
+  color: #333;
+}
+
+
+.yes {
+  border: green solid 1px;
+}
+
+.no {
+  border: red solid 1px;
+}
+
+.selected-yes {
+  background-color: green;
+  color: #fff;
+}
+
+.selected-no {
+  background-color: red;
+  color: #fff;
+}

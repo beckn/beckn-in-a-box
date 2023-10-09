@@ -1,0 +1,39 @@
+
+.apirole-container{
+    display: flex;
+    justify-content: space-evenly;
+    width: 40%;
+    margin-left: auto;
+}
+/* Add styles for the copy text button */
+.copy-button {
+    background-color: #4caf50;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 5px;
+    font-size: 1rem;
+}
+
+/* Highlight the API text on click */
+.api-container.clicked {
+   
+}
+
+/* Add a smooth transition for overflow change */
+.api-container{
+    width: 70%;
+    margin-left: 1rem;
+    display: flex;
+}
+.project-api {
+    font-size: 1rem;
+    color:blueviolet;
+}
+
